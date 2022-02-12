@@ -1,0 +1,19 @@
+
+
+      <h1>ახალი Card-ის დამატება</h1>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+        <mat-label>სათაური</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>ლინკი</mat-label>
+        <input matInput formControlName="link">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" >
+        <mat-label>აღწერა</mat-label>
+        <textarea  rows="5" cols="60" matInput formControlName="desc" ></textarea>
+      </mat-form-field>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!addForm.valid">დამატება</button>
+  </form>

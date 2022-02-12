@@ -1,0 +1,39 @@
+<!-- <div class="center"> -->
+
+<!--     
+    <h1>ავტორიზაცია</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <div class="txt_field">
+        <input type="text" formControlName="username">
+        <label for="" >მომხმარებელი:</label>
+    </div>
+    
+    <div class="txt_field">
+        <input type="password" formControlName="password">
+        <label for="">პაროლი:</label>
+    </div>
+<div class="pass">პაროლის აღდგენა ! </div>
+<button mat-raised-button color="primary" type="submit">შესვლა</button>
+<div class="signup_link">
+ <a>რეგისტრაცია</a>
+</div>
+</form> -->
+<h1>ავტორიზაცია</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<mat-form-field appearance="fill">
+    <mat-label>მომხმარებელი</mat-label>
+    <input matInput  type="text" formControlName="username">
+</mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>პაროლი</mat-label>
+    <input matInput type="password" formControlName="password">
+  </mat-form-field>
+  <!-- <div class="regfog" > -->
+      <a class="signup_link">რეგისტრაცია</a>
+
+    <!-- </div> -->
+  <button mat-raised-button color="primary" type="submit">შესვლა</button>
+  <a  class="pass">დაგავიწყდა პაროლი?</a> 
+</form>
+<!-- </div> -->

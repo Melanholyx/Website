@@ -1,0 +1,36 @@
+<nav class="navbar">
+       <div  class="logo">
+        <img  src="https://a.radikal.ru/a02/2111/12/f609936698c4.png" alt="logo" width="30px" height="30px">
+       </div> 
+
+       <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+       <div class="nav-links" id="#smth">
+        <ul>
+            <li><a routerLink="">მთავარი</a></li>
+            <li><a routerLink="products">პროდუქტები</a></li>
+            <li><a routerLink="rules">წესები</a></li>
+            <li><a routerLink="about">ჩვენს შესახებ</a></li>
+        </ul>
+       </div>
+        <div class="buttons">
+            <a mat-raised-button (click)="openDialogAdd()" *ngIf="isLoggedIn">დამატება</a>
+            <a mat-raised-button (click)="openDialog()" *ngIf="!isLoggedIn">შესვლა</a>
+            <a mat-raised-button (click)="onlogOut()" *ngIf="isLoggedIn">გამოსვლა</a>
+        </div>
+
+
+    </nav>
+    <div>
+
+
+</div>
+
+
+
+
+   
+

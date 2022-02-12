@@ -1,0 +1,28 @@
+<main>
+    <section class="cards">
+        <div class="card" *ngFor="let i of arr">
+            <div class="card-image-cont">
+                <img src="{{i.image}}">
+            </div>
+            <div class="card-content">
+                <p class="card-title">
+                    {{i.name}}
+                </p>
+                <div class="card-info">
+                    <p class="card-desc">
+                       {{i.desc}}
+                    </p>
+                </div>
+                <div class="card-bottom">
+                    <a><button>Like</button></a>
+                    <a><button>Buy</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<mat-paginator style="background:#24252A; color:white;" [length]="this.arrsiz.length" [pageSizeOptions]="[6, 3, 9 ]" aria-label="Select page" (page)="onPageChange($event)">
+
+</mat-paginator>
+

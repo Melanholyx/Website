@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px double #3c3b49;
+    color:whitesmoke;
+}
+
+.mat-raised-button{
+     width: 150px;
+}
+mat-form-field{
+    width: 100%
+}
+mat-input{
+    background: grey;
+    color:white;
+}
+
+mat-label{
+    color:white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    width : 350px;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    form{
+        width : 250px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    form{
+        width : 200px;
+    }
+
+
+}
